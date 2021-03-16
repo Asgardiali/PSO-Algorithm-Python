@@ -2,8 +2,8 @@ import numpy as np
 import random
 
 """
-ssize: Swarm büyüklüğüdür. Yani toplam parçacık sayısıdır.
-d: Problemin boyutudur. Yani bir parçacıktaki toplam parametre sayısıdır.
+ssize: The size of the swarm. So is the total number of results.
+d: The size of the problem. So it is the total number of parameters in a particle.
 
 """
 altSinir = -10
@@ -75,5 +75,5 @@ while iterasyon <= 10000 and np.amin(obj) <= 0.00001:
 
     iterasyon = iterasyon + 1
 
-print("Sürünün En iyi Değeri\n{}\n".format(sbestvalue))
-print("Sürünün En İyi Parametreleri\n{}".format(sbestpos))
+print("Best Value in Swarm\n{}\n".format(sbestvalue))
+print("Best Position in Swarm\n{}".format(sbestpos))
